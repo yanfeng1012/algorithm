@@ -30,3 +30,20 @@ function selectSort($arr)
     }
     return $arr;
 }
+
+$arr = array(
+    2,
+    13,
+    42,
+    34,
+    56,
+    23,
+    67,
+    365,
+    87665,
+    54,
+    68,
+    3
+);
+
+print_r(selectSort($arr));

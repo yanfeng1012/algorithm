@@ -33,3 +33,20 @@ function swap(array &$arr, int $a, int $b)
     $arr[$a] = $arr[$b];
     $arr[$b] = $temp;
 }
+
+$arr = array(
+    2,
+    13,
+    42,
+    34,
+    56,
+    23,
+    67,
+    365,
+    87665,
+    54,
+    68,
+    3
+);
+
+print_r(shellSort($arr));

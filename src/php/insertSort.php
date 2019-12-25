@@ -27,3 +27,17 @@ function insertSort($arr)
     }
     return $arr;
 }
+
+$arr = array(
+    6,
+    3,
+    2,
+    7,
+    1,
+    5,
+    8,
+    4
+);
+
+$output = insertSort($arr);
+print_r($output);

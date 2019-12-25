@@ -1,26 +1,4 @@
 <?php
-// 因为是数组,下标从0开始,所以,下标为n根结点的左子结点为2n+1,右子结点为2n+2;
-// 初始化值,建立初始堆
-$arr = array(
-    49,
-    38,
-    65,
-    97,
-    76,
-    13,
-    27,
-    50
-);
-$arrSize = count($arr);
-
-// 将第一次排序抽出来，因为最后一次排序不需要再交换值了。
-heapSort($arr, $arrSize);
-
-for ($i = $arrSize - 1; $i > 0; $i --) {
-    swap($arr, $i, 0);
-    $arrSize --;
-    heapSort($arr, $arrSize);
-}
 
 /**
  * 堆排序
@@ -62,4 +40,27 @@ function swap(&$arr, $one, $another)
     $tmp = $arr[$one];
     $arr[$one] = $arr[$another];
     $arr[$another] = $tmp;
+}
+
+// 因为是数组,下标从0开始,所以,下标为n根结点的左子结点为2n+1,右子结点为2n+2;
+// 初始化值,建立初始堆
+$arr = array(
+    49,
+    38,
+    65,
+    97,
+    76,
+    13,
+    27,
+    50
+);
+$arrSize = count($arr);
+
+// 将第一次排序抽出来，因为最后一次排序不需要再交换值了。
+heapSort($arr, $arrSize);
+
+for ($i = $arrSize - 1; $i > 0; $i --) {
+    swap($arr, $i, 0);
+    $arrSize --;
+    heapSort($arr, $arrSize);
 }

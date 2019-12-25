@@ -18,3 +18,17 @@ function bubbleSort($array)
     }
     return $array;
 }
+
+$arr = array(
+    49,
+    38,
+    65,
+    97,
+    76,
+    13,
+    27,
+    50
+);
+
+$output = bubbleSort($arr);
+print_r($output);
