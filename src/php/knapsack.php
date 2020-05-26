@@ -82,4 +82,4 @@ class maxBag
 }
 
 $back = new maxBag();
-print_r($back);
+print_r($back->knapsack());
